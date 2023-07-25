@@ -21,8 +21,12 @@ sudo dnf instal code
 #
 sudo dnf install neovim
 
+# Tealdeer
+#
+sudo dnf install tealdeer
+
 # Starship
 #
-echo "Adding Starship repo and Installing the package"
+echo "Adding Starship Copr repo and Installing the package"
 sudo dnf copr enable atim/starship
 sudo dnf install starship
