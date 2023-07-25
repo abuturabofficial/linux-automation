@@ -17,6 +17,10 @@ echo "Intalling the Visual Studio Code binary on Fedora Container"
 sudo dnf check-update
 sudo dnf instal code
 
+# Neovim
+#
+sudo dnf install neovim
+
 # Starship
 #
 echo "Adding Starship repo and Installing the package"
