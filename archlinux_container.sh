@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Moving to a /tmp DIR
 #
 echo "Moving inside /tmp DIR"
