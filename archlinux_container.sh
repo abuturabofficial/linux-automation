@@ -29,14 +29,14 @@ is_package_exported() {
     [[ -f "$HOME/.local/bin/$1" ]]
 }
 
-# Install required packages if not already installed/exported
+# Install required packages if not already installed
 install_package() {
     local package_name=$1
     local executable_name=$2
     if ! command -v "$executable_name" &> /dev/null && ! is_package_exported "$package_name"; then
         sudo pacman -S "$package_name"
     else
-        echo "$package_name is already installed or exported"
+        echo "$package_name is already installed"
     fi
 }
 
@@ -65,4 +65,4 @@ export_package zoxide
 export_package tldr
 export_package hstr
 export_package bat
-
+export_package fzf
